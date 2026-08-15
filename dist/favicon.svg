@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="MaVionix">
+  <rect width="64" height="64" rx="14" fill="#120224"/>
+  <path d="M12 46V18h9.2L32 34.7 42.8 18H52v28h-8.2V30.8L34.5 46h-5L20.2 30.8V46H12z" fill="#d8b4fe"/>
+  <path d="M17 15h30" stroke="#22d3ee" stroke-width="4" stroke-linecap="round"/>
+</svg>

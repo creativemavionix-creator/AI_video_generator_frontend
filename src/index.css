@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --brand-blue-50: #faf5ff;
+  --brand-blue-100: #f3e8ff;
+  --brand-blue-200: #e9d5ff;
+  --brand-blue-400: #a855f7;
+  --brand-blue-500: #7c3aed;
+  --brand-blue-600: #6d28d9;
+  --brand-blue-900: #4c1d95;
+  --brand-blue-950: #2e1065;
+  --mavionix-purple: #C800FF;
+}
+
+.dark {
+  --brand-blue-50: rgba(168, 85, 247, 0.08);
+  --brand-blue-100: rgba(168, 85, 247, 0.18);
+  --brand-blue-200: rgba(168, 85, 247, 0.32);
+  --brand-blue-400: #d8b4fe;
+  --brand-blue-500: #a855f7;
+  --brand-blue-600: #c084fc;
+  --brand-blue-900: #3b0764;
+  --brand-blue-950: #120224;
+}
+
+html {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+
+.btn-primary {
+  background-image: none;
+  background: linear-gradient(135deg, #160430, #312e81);
+  color: #ffffff;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+.btn-primary:hover {
+  background-color: #1e293b;
+}
+.dark .btn-primary {
+  background: none;
+  background-color: #6d28d9;
+}
+.dark .btn-primary:hover {
+  background-color: #7c3aed;
+}
+
+@keyframes reveal-up {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.reveal-up {
+  animation: reveal-up 0.45s ease both;
+}
+.reveal-delay-1 { animation-delay: 0.05s; }
+.reveal-delay-2 { animation-delay: 0.1s; }
+.reveal-delay-3 { animation-delay: 0.15s; }
+.reveal-delay-4 { animation-delay: 0.2s; }
