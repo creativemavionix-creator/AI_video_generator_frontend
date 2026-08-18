@@ -1,2 +1,3 @@
 // Global configuration for API endpoints
-export const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000';
+const envUrl = import.meta.env.VITE_API_BASE_URL;
+export const API_BASE_URL = (envUrl && envUrl.trim() !== '') ? envUrl.trim() : 'http://localhost:8000';
